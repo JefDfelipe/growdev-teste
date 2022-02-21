@@ -12,7 +12,9 @@ app.use(cors());
     pull → puxa
 */
 //GITHUB → plataforma de respositórios
-
+app.get('/', (req:Request, res:Response) => {
+    return res.send('ok');
+});
 app.listen(8080, () => {
     console.log('Servidor rodando.');
 });
