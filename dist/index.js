@@ -15,8 +15,9 @@ app.use((0, cors_1.default)());
 */
 //GITHUB → plataforma de respositórios
 app.get('/', (req, res) => {
-    return res.send('ok');
+    return res.send('Rota padrão');
 });
-app.listen(8080, () => {
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
     console.log('Servidor rodando.');
 });
