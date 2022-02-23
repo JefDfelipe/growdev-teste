@@ -13,7 +13,7 @@ app.use(cors());
 */
 //GITHUB → plataforma de respositórios
 app.get('/', (req:Request, res:Response) => {
-    return res.send('ok');
+    return res.send('Rota padrão');
 });
 const port = process.env.PORT || 8080;
 
